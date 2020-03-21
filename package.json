@@ -1,0 +1,47 @@
+{
+  "name": "mntrbt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "npm run build-ts && npm run lint",
+    "build-ts": "tsc",
+    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagovazquez/mntrbt.git"
+  },
+  "author": "Santiago Vázquez",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jquery": "^3.3.31",
+    "find-up": "^4.1.0",
+    "inquirer": "^7.0.3",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "ora": "^4.0.3",
+    "puppeteer": "^1.20.0",
+    "rxjs": "^6.5.4",
+    "yargs": "^15.1.0"
+  },
+  "bugs": {
+    "url": "https://github.com/santiagovazquez/mntrbt/issues"
+  },
+  "homepage": "https://github.com/santiagovazquez/mntrbt#readme",
+  "devDependencies": {
+    "@types/eslint": "^6.1.6",
+    "@types/inquirer": "^6.5.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^13.5.0",
+    "@types/node-fetch": "^2.5.4",
+    "@types/ora": "^3.2.0",
+    "@types/puppeteer": "^2.0.0",
+    "@types/yargs": "^15.0.1",
+    "@typescript-eslint/eslint-plugin": "^2.17.0",
+    "@typescript-eslint/parser": "^2.17.0",
+    "eslint": "^6.8.0",
+    "typescript": "^3.7.5"
+  }
+}
